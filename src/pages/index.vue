@@ -25,17 +25,20 @@
       </div>
     </div>
     <AboutMe />
+    <Skills />
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import AboutMe from '~/components/AboutMe'
+import Skills from '~/components/Skills'
 
 export default {
   components: {
     Logo,
-    AboutMe
+    AboutMe,
+    Skills
   }
 }
 </script>
