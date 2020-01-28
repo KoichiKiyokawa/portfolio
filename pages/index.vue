@@ -10,37 +10,44 @@
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
+          About Me
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/KoichiKiyokawa"
           target="_blank"
           class="button--grey"
         >
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
           GitHub
         </a>
       </div>
     </div>
+    <AboutMe />
   </div>
 </template>
 
 <script>
+import AOS from 'aos'
 import Logo from '~/components/Logo.vue'
+import AboutMe from '~/components/AboutMe'
 
 export default {
   components: {
-    Logo
+    Logo,
+    AboutMe
+  },
+  created() {
+    AOS.init()
   }
 }
 </script>
 
 <style>
 .container {
-  margin: 0 auto;
+  margin: 5em auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
