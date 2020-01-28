@@ -29,7 +29,6 @@
 </template>
 
 <script>
-import AOS from 'aos'
 import Logo from '~/components/Logo.vue'
 import AboutMe from '~/components/AboutMe'
 
@@ -37,9 +36,6 @@ export default {
   components: {
     Logo,
     AboutMe
-  },
-  created() {
-    AOS.init()
   }
 }
 </script>
@@ -67,6 +63,13 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+}
+
+.body {
+  font-weight: 250;
+  font-size: 24px;
+  color: #526488;
+  word-spacing: 3px;
 }
 
 .links {
