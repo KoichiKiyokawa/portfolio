@@ -39,7 +39,14 @@ export default {
     Logo,
     AboutMe,
     Skills
-  }
+  },
+  mounted() {
+    document.onscroll = e => {
+      this.position =
+        document.documentElement.scrollTop || document.body.scrollTop
+    }
+  },
+  data: () => ({ position: 0 })
 }
 </script>
 
