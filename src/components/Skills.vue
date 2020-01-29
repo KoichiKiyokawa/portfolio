@@ -4,9 +4,3 @@ div(data-aos="fade-up" data-aos-delay="100")
   .body
     p Rails: 2018/4~
 </template>
-
-<style scoped>
-.title {
-  margin-top: 33vh;
-}
-</style>

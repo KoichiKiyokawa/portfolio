@@ -5,11 +5,13 @@
   h2.subtitle My portfolio
   .sticky-header
     a.menu About Me
+    a.menu Skills
     a.menu(href="https://github.com/KoichiKiyokawa" target="_blank")
-      span.icon
-        i.fab.fa-github
-        | GitHub
+      i.fab.fa-github
+      | GitHub
+  .mt-50
   AboutMe
+  .mt-30
   Skills
 </template>
 
@@ -27,56 +29,54 @@ export default {
 }
 </script>
 
-<style>
-.wrapper {
-  margin: 5em auto;
-  min-height: 100vh;
-  text-align: center;
-}
+<style lang="sass">
+.wrapper
+  margin: 5em auto
+  min-height: 100vh
+  text-align: center
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+.title
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
+  display: block
+  font-weight: 300
+  font-size: 100px
+  color: #35495e
+  letter-spacing: 1px
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+.subtitle
+  font-weight: 300
+  font-size: 42px
+  color: #526488
+  word-spacing: 5px
+  padding-bottom: 15px
 
-.body {
-  font-weight: 250;
-  font-size: 24px;
-  color: #526488;
-  word-spacing: 3px;
-}
+.body
+  font-weight: 250
+  font-size: 24px
+  color: #526488
+  word-spacing: 3px
 
-.sticky-header {
-  position: sticky;
-  top: 0;
-  height: 88px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #00d1b2;
-}
+$header-height: 80px
 
-.menu {
-  color: white;
-  height: 88px;
-  line-height: 88px;
-  font-size: 2em;
-}
+.sticky-header
+  position: sticky
+  top: 0
+  height: $header-height
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: #00d1b2
 
-.menu + .menu {
-  margin-left: 5em;
-}
+.menu
+  margin: 0 1.5em
+  color: white
+  height: $header-height
+  line-height: $header-height
+  font-size: 2em
+
+.mt-50
+  margin-top: 50vh
+
+.mt-30
+  margin-top: 30vh
 </style>

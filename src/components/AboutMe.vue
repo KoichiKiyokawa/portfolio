@@ -8,9 +8,3 @@ div(data-aos="fade-up" data-aos-delay="100")
     br
     p 映画・漫画・アニメが好き。
 </template>
-
-<style scoped>
-.title {
-  margin-top: 50vh;
-}
-</style>
