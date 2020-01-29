@@ -1,26 +1,16 @@
-<template>
-  <div class="wrapper">
-    <logo />
-    <h1 class="title">
-      portfolio
-    </h1>
-    <h2 class="subtitle">
-      My portfolio
-    </h2>
-    <div class="sticky-header">
-      <a class="menu">
-        About Me
-      </a>
-      <a href="https://github.com/KoichiKiyokawa" target="_blank" class="menu">
-        <span class="icon">
-          <i class="fab fa-github"></i>
-        </span>
-        GitHub
-      </a>
-    </div>
-    <AboutMe />
-    <Skills />
-  </div>
+<template lang="pug">
+.wrapper
+  logo
+  h1.title portfolio
+  h2.subtitle My portfolio
+  .sticky-header
+    a.menu About Me
+    a.menu(href="https://github.com/KoichiKiyokawa" target="_blank")
+      span.icon
+        i.fab.fa-github
+        | GitHub
+  AboutMe
+  Skills
 </template>
 
 <script>
