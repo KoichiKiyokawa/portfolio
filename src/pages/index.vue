@@ -7,11 +7,11 @@
     a.menu About Me
     a.menu Skills
     a.menu(href="https://github.com/KoichiKiyokawa" target="_blank")
-      i.fab.fa-github
+      i.fab.fa-github.mr-small
       | GitHub
-  .mt-50
+  .mt-large
   AboutMe
-  .mt-30
+  .mt-middle
   Skills
 </template>
 
@@ -74,9 +74,12 @@ $header-height: 80px
   line-height: $header-height
   font-size: 2em
 
-.mt-50
+.mt-large
   margin-top: 50vh
 
-.mt-30
+.mt-middle
   margin-top: 30vh
+
+.mr-small
+  margin-right: 0.3em
 </style>
