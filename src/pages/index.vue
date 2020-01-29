@@ -1,28 +1,22 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        My portfolio
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          About Me
-        </a>
-        <a
-          href="https://github.com/KoichiKiyokawa"
-          target="_blank"
-          class="button--grey"
-        >
-          <span class="icon">
-            <i class="fab fa-github"></i>
-          </span>
-          GitHub
-        </a>
-      </div>
+  <div class="wrapper">
+    <logo />
+    <h1 class="title">
+      portfolio
+    </h1>
+    <h2 class="subtitle">
+      My portfolio
+    </h2>
+    <div class="sticky-header">
+      <a class="menu">
+        About Me
+      </a>
+      <a href="https://github.com/KoichiKiyokawa" target="_blank" class="menu">
+        <span class="icon">
+          <i class="fab fa-github"></i>
+        </span>
+        GitHub
+      </a>
     </div>
     <AboutMe />
     <Skills />
@@ -39,19 +33,12 @@ export default {
     Logo,
     AboutMe,
     Skills
-  },
-  mounted() {
-    document.onscroll = e => {
-      this.position =
-        document.documentElement.scrollTop || document.body.scrollTop
-    }
-  },
-  data: () => ({ position: 0 })
+  }
 }
 </script>
 
 <style>
-.container {
+.wrapper {
   margin: 5em auto;
   min-height: 100vh;
   text-align: center;
@@ -82,7 +69,24 @@ export default {
   word-spacing: 3px;
 }
 
-.links {
-  padding-top: 15px;
+.sticky-header {
+  position: sticky;
+  top: 0;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00d1b2;
+}
+
+.menu {
+  color: white;
+  height: 88px;
+  line-height: 88px;
+  font-size: 2em;
+}
+
+.menu + .menu {
+  margin-left: 5em;
 }
 </style>
