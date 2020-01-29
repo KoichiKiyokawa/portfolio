@@ -1,5 +1,5 @@
 <template>
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div data-aos="fade-up" data-aos-delay="100">
     <h1 class="title">About Me</h1>
     <div class="body">
       <p>1998年生まれ。</p>
