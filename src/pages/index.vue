@@ -4,18 +4,20 @@
   h1.title portfolio
   h2.subtitle My portfolio
   .sticky-header
-    a.menu About Me
-    a.menu Skills
-    a.menu Works
+    a.menu(v-scroll-to="'#about-me'") About Me
+    a.menu(v-scroll-to="'#skills'") Skills
+    a.menu(v-scroll-to="'#works'") Works
     a.menu(href="https://github.com/KoichiKiyokawa" target="_blank")
       i.fab.fa-github.mr-small
       | GitHub
   .mt-large
-  AboutMe
+  AboutMe#about-me
   .mt-middle
-  Skills
+  Skills#skills
   .mt-middle
-  Works
+  Works#works
+  button.float-button(v-scroll-to="'.wrapper'")
+    i.fas.fa-arrow-up
 </template>
 
 <script>
@@ -91,6 +93,18 @@ $header-height: 80px
   .menu
     margin: 0 2vw
     font-size: 2vw
+
+.float-button
+  background-color: #00d1b2
+  font-size: 24px
+  color: white
+  width: 48px
+  height: 48px
+  border-radius: 50%
+  position: fixed
+  bottom: 8px
+  right: 8px
+  outline: none
 
 .mt-large
   margin-top: 50vh
