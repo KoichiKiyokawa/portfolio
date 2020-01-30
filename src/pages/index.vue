@@ -6,6 +6,7 @@
   .sticky-header
     a.menu About Me
     a.menu Skills
+    a.menu Works
     a.menu(href="https://github.com/KoichiKiyokawa" target="_blank")
       i.fab.fa-github.mr-small
       | GitHub
@@ -13,18 +14,22 @@
   AboutMe
   .mt-middle
   Skills
+  .mt-middle
+  Works
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import AboutMe from '~/components/AboutMe'
 import Skills from '~/components/Skills'
+import Works from '~/components/Works'
 
 export default {
   components: {
     Logo,
     AboutMe,
-    Skills
+    Skills,
+    Works
   }
 }
 </script>
