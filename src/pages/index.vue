@@ -68,16 +68,29 @@ $header-height: 80px
   top: 0
   height: $header-height
   display: flex
+  width: 100vw
   align-items: center
   justify-content: center
   background-color: #00d1b2
 
 .menu
-  margin: 0 1.5em
   color: white
   height: $header-height
   line-height: $header-height
-  font-size: 2em
+  margin: 0 4vw
+  font-size: 4vw
+@media screen and (min-width: 480px)
+  .menu
+    margin: 0 3vw
+    font-size: 4vw
+@media screen and (min-width: 768px)
+  .menu
+    margin: 0 2vw
+    font-size: 3vw
+@media screen and (min-width: 1024px)
+  .menu
+    margin: 0 2vw
+    font-size: 2vw
 
 .mt-large
   margin-top: 50vh
