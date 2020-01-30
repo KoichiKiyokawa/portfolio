@@ -1,5 +1,5 @@
 <template lang="pug">
-div(data-aos="fade-up" data-aos-delay="100")
+div(data-aos="fade-up" data-aos-delay="500")
   h1.title About Me
   .body
     p 1998年生まれ。
