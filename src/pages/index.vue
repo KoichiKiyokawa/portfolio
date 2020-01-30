@@ -79,20 +79,20 @@ $header-height: 80px
   color: white
   height: $header-height
   line-height: $header-height
-  margin: 0 4vw
-  font-size: 4vw
+  margin: 0 0.8rem
+  font-size: 1.2rem
 @media screen and (min-width: 480px)
   .menu
-    margin: 0 3vw
-    font-size: 4vw
+    margin: 0 1rem
+    font-size: 1.5rem
 @media screen and (min-width: 768px)
   .menu
-    margin: 0 2vw
-    font-size: 3vw
+    margin: 0 1rem
+    font-size: 1.5rem
 @media screen and (min-width: 1024px)
   .menu
-    margin: 0 2vw
-    font-size: 2vw
+    margin: 0 1.5rem
+    font-size: 2rem
 
 .float-button
   background-color: #00d1b2

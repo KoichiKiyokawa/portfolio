@@ -31,17 +31,16 @@ div#skills(data-aos="fade-up" data-aos-delay="500")
       p まだまだ勉強途中...
       p Clean Architectureも勉強して、
       p Go + Clean Architectureでサーバーサイドを書いてみたい
+    // TODO: firebase
 </template>
 
 <style lang="sass" scoped>
-@media screen and (max-width: 768px)
-  #skills
-    width: 80%
-    padding: 0 30px
-    margin: auto
+#skills
+  width: 90%
+  margin: auto
 .grid
   display: grid
-  gap: 10px
+  gap: 2em
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr))
 
   img
