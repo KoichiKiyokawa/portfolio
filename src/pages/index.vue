@@ -59,7 +59,7 @@ export default {
 
 .body
   font-weight: 250
-  font-size: 24px
+  font-size: 2.5vw
   color: #526488
   word-spacing: 3px
 
