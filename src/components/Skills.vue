@@ -14,6 +14,7 @@ div#skills(data-aos="fade-up" data-aos-delay="500")
       img(src="https://jp.vuejs.org/images/logo.png" alt="Vue")
       p Vue: 2018/11~
       p Vuex, Vue routerも。色々よしなにやってくれるNuxtが好き。このサイトもNuxtで作っています(適当に設定していたらPWAに対応してた...)。
+      p TypeScript + クラススタイルの書き方が好きですが、VuexとTypeScriptの組み合わせはまだ勉強中...
     .each-skill
       img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React")
       p React
