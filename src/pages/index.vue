@@ -68,6 +68,7 @@ $header-height: 80px
 
 .sticky-header
   position: sticky
+  z-index: 1
   top: 0
   height: $header-height
   display: flex
