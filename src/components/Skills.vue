@@ -10,6 +10,10 @@ div#skills(data-aos="fade-up" data-aos-delay="500")
       p Rspecでテストケースを書いたりも。
       p テンプレートエンジンはhamlとslimを扱ったとこがあります。
       p 最近はapiサーバーとしてしか使っていないので、helperとか忘れ気味...
+    .each-skil
+      img(src="https://classmethod.jp/wp-content/uploads/2017/03/partner-logo-githubenterprise.png", alt="GitHub")
+      p GitHub
+      p Gitの操作、GitHub Flowでの開発ができます。機能ごとにブランチを切って、プルリクを作ったり、レビューをしたり。こまめにコミットしておいてから、git rebase -iでコミットをまとめる派。
     .each-skill
       img(src="https://jp.vuejs.org/images/logo.png" alt="Vue")
       p Vue: 2018/11~
