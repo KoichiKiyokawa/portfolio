@@ -16,19 +16,18 @@
   Skills#skills
   .mt-middle
   Works#works
-  button.float-button(v-scroll-to="'.wrapper'")
-    i.fas.fa-arrow-up
+  ScrollTop
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import ScrollTop from '~/components/ScrollTop'
 import AboutMe from '~/components/AboutMe'
 import Skills from '~/components/Skills'
 import Works from '~/components/Works'
 
 export default {
   components: {
-    Logo,
+    ScrollTop,
     AboutMe,
     Skills,
     Works
