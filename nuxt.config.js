@@ -46,7 +46,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/aos' }, { src: '~/plugins/scroll' }],
+  plugins: [{ src: '~/plugins/aos' }, { src: '~/plugins/scrollTo' }],
   /*
    ** Nuxt.js dev-modules
    */
