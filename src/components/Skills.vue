@@ -41,7 +41,10 @@ div#skills(data-aos="fade-up" data-aos-delay="500")
 .grid
   display: grid
   gap: 2em
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+
+  .each-skil
+    max-width: 90vw
 
   img
     height: 20vh

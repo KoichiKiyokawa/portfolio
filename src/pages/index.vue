@@ -40,6 +40,7 @@ export default {
 .wrapper
   margin: 5em auto
   min-height: 100vh
+  width: 100vw
   text-align: center
 
 .title
@@ -70,7 +71,7 @@ $header-height: 80px
   top: 0
   height: $header-height
   display: flex
-  width: 100vw
+  width: 100%
   align-items: center
   justify-content: center
   background-color: #00d1b2
@@ -80,7 +81,7 @@ $header-height: 80px
   height: $header-height
   line-height: $header-height
   margin: 0 0.8rem
-  font-size: 1.2rem
+  font-size: 1rem
 @media screen and (min-width: 480px)
   .menu
     margin: 0 1rem
