@@ -4,6 +4,16 @@
 </template>
 
 <style lang="sass">
-button
+.float-button
   z-index: 2
+  background-color: #00d1b2
+  font-size: 24px
+  color: white
+  width: 48px
+  height: 48px
+  border-radius: 50%
+  position: fixed
+  bottom: 8px
+  right: 8px
+  outline: none
 </style>

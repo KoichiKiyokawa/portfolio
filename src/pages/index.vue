@@ -11,11 +11,11 @@
       i.fab.fa-github.mr-small
       | GitHub
   .mt-large
-  AboutMe#about-me
+  AboutMe#about-me.shrink
   .mt-middle
-  Skills#skills
+  Skills#skills.shrink
   .mt-middle
-  Works#works
+  Works#works.shrink
   ScrollTop
 </template>
 
@@ -95,17 +95,9 @@ $header-height: 80px
     margin: 0 1.5rem
     font-size: 2rem
 
-.float-button
-  background-color: #00d1b2
-  font-size: 24px
-  color: white
-  width: 48px
-  height: 48px
-  border-radius: 50%
-  position: fixed
-  bottom: 8px
-  right: 8px
-  outline: none
+.shrink
+  max-width: 90vw
+  margin: auto
 
 .mt-large
   margin-top: 50vh
