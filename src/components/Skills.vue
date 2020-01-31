@@ -42,9 +42,19 @@ div#skills(data-aos="fade-up" data-aos-delay="500")
       p Clean Architectureも勉強して、
       p Go + Clean Architectureでサーバーサイドを書いてみたい
     .each-skill
-      img(src="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/98878d582fec33e5c3dfe95931b8d8f1.png", alt="Firebase")
+      img(src="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/98878d582fec33e5c3dfe95931b8d8f1.png" alt="Firebase")
       p Firebase
       p Authentification, FireStoreが使えます。ML Kitとかも使ってみたい。
+    .each-skill
+      img(src="https://raw.githubusercontent.com/neovim/neovim.github.io/master/logos/neovim-logo-300x87.png" alt="Vim")
+      p Vim(技術なのか...?)
+      p Vimを普段遣いしています。
+      p こだわりの設定は
+       |
+       a(href="https://github.com/KoichiKiyokawa/dotfiles/blob/master/nvim/init.vim" target="_blank") 
+         | こちらに
+         i.fab.fa-github
+      p SSHでサーバーに繋いでいるときに音速でファイル編集ができます
     // TODO: AWS EC2, Lambda, Neptune
     .each-skil
       img()
