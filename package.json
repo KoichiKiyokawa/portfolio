@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "My portfolio",
+  "description": "K.Kiyokawa's portfolio site.",
   "author": "K.Kiyokawa",
   "private": true,
   "scripts": {
