@@ -1,7 +1,7 @@
 <template lang="pug">
 .wrapper
-  logo
-  h1.title portfolio
+  img(src="icon.png" alt="logo")
+  h1.title K.Kiyokawa
   h2.subtitle My portfolio
   .sticky-header
     a.menu(v-scroll-to="'#about-me'") About Me
@@ -47,13 +47,13 @@ export default {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
   display: block
   font-weight: 300
-  font-size: 100px
+  font-size: 10vw
   color: #35495e
   letter-spacing: 1px
 
 .subtitle
   font-weight: 300
-  font-size: 42px
+  font-size: 5vw
   color: #526488
   word-spacing: 5px
   padding-bottom: 15px

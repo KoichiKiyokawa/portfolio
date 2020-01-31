@@ -45,6 +45,9 @@ div#skills(data-aos="fade-up" data-aos-delay="500")
       img(src="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/98878d582fec33e5c3dfe95931b8d8f1.png", alt="Firebase")
       p Firebase
       p Authentification, FireStoreが使えます。ML Kitとかも使ってみたい。
+    // TODO: AWS EC2, Lambda, Neptune
+    .each-skil
+      img()
 </template>
 
 <style lang="sass" scoped>
