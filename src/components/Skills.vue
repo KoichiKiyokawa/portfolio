@@ -13,7 +13,7 @@ div#skills(data-aos="fade-up" data-aos-delay="500")
     .each-skill
       img(src="https://jp.vuejs.org/images/logo.png" alt="Vue")
       p Vue: 2018/11~
-      p TypeScript
+      p Vuex, Vue routerも。色々よしなにやってくれるNuxtが好き。このサイトもNuxtで作っています(適当に設定していたらPWAに対応してた...)。
     .each-skill
       img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React")
       p React
@@ -25,13 +25,21 @@ div#skills(data-aos="fade-up" data-aos-delay="500")
       p 大学の卒業研究でJavaを書いていました
       p 他にもJavaFXでデスクトップアプリを作ったり
     .each-skill
+      img(src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fwww.creationline.com%2Fwp-content%2Fuploads%2F2018%2F06%2FMoby2018.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&s=98741ddc33689c0fba6dc2e4c6838d9e" alt="Docker")
+      p Docker
+      p Dockerfile, docker-compose.ymlが書けます。
+      p とりあえずalpineをベースイメージにしておけば、イメージサイズが小さくできて何かと便利だと思っている。
+    .each-skill
       img(src="https://cdn-ak.f.st-hatena.com/images/fotolife/t/tikasan0804/20170719/20170719172956.png" alt="Golang")
       p Go: 2018/12~
       p EchoでかんたんなAPIサーバーを作ったことがあります
       p まだまだ勉強途中...
       p Clean Architectureも勉強して、
       p Go + Clean Architectureでサーバーサイドを書いてみたい
-    // TODO: firebase
+    .each-skill
+      img(src="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/98878d582fec33e5c3dfe95931b8d8f1.png", alt="Firebase")
+      p Firebase
+      p Authentification, FireStoreが使えます。ML Kitとかも使ってみたい。
 </template>
 
 <style lang="sass" scoped>
