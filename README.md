@@ -1,9 +1,19 @@
 # portfolio
 ![](https://github.com/KoichiKiyokawa/portfolio/workflows/github%20pages/badge.svg)
 
-> My portfolio
+My portfolio repository
+- [Feature](#feature)
+- [Build Setup](#build-setup)
+## Feature
+- Made with Nuxt
+- No CSS Framework
+- Auto test & Auto deploy by Github Actions
+
 
 ## Build Setup
+### Dependencies
+- Node
+- yarn
 
 ``` bash
 # install dependencies
@@ -19,5 +29,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
