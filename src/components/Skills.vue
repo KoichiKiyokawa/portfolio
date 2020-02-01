@@ -78,7 +78,7 @@ export default {
       },
       {
         name: 'Vim(技術なのか...?)',
-        imgSrc: 'https://raw.githubusercontent.com/neovim/neovim.github.io/master/logos/neovim-logo-300x87.png',
+        imgSrc: 'https://cdn.dribbble.com/users/2008/screenshots/1442436/mark-dribbble.png',
         imgAlt: 'Vim',
         description:
           'Vimを普段遣いしています。SSHでサーバーに繋いでいるときに音速でファイル編集ができます|こだわりの設定は<a href="https://github.com/KoichiKiyokawa/dotfiles/blob/master/nvim/init.vim" target="_blank">こちらに<i class="fab fa-github" /></a>'
