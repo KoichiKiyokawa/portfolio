@@ -1,7 +1,9 @@
 <template lang="pug">
 div#skills(data-aos="fade-up" data-aos-delay="500")
   h1.title Skills
-  h2.subtitle 言語, フレームワーク, etc... (経歴が長い順に並んでいます)
+  h2.subtitle 言語, フレームワーク, etc... 
+    br
+    | (経歴が長い順に並んでいます)
   .body.grid
     .each-skill(v-for="(skill, i) in skills" :key="i")
       img(:src="skill.imgSrc" :alt="skill.imgAlt || skill.name")
