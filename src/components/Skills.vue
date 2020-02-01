@@ -32,7 +32,7 @@ export default {
         since: '2018/4',
         imgSrc: 'https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png',
         description:
-          'ER図通りにMigrationファイルやModelファイルを書くことができます。たぶん。|Rspecでテストケースを書いたりも。|テンプレートエンジンはhamlとslimを扱ったとこがあります。|最近はapiサーバーとしてしか使っていないので、helperとか忘れ気味...'
+          'ER図通りにMigrationファイルやModelファイルを書くことができます。|Rspecでテストケースを書いたりも。|テンプレートエンジンはhamlとslimを扱ったとこがあります。|最近はapiサーバーとしてしか使っていないので、helperとか忘れ気味...'
       },
       {
         name: 'GitHub',
