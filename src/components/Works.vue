@@ -3,7 +3,7 @@ div(data-aos="fade-up" data-aos-delay="500")
   h1.title Works
   carousel(:per-page="1" :navigate-to="page")
     slide
-      video.work-img(src="dormio_summary.mp4" autoplay loop)
+      video.work-img(src="dormio_summary.mp4" autoplay controls loop)
       carousel-navigator(@prev-page="turnPrevPage" @next-page="turnNextPage")
       p.subtitle Dormio
       .body
