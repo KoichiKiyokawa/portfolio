@@ -1,6 +1,6 @@
 <template lang="pug">
 .wrapper
-  img(src="icon.png" alt="logo")
+  img.shrink(src="icon.png" alt="logo")
   h1.title K.Kiyokawa
   h2.subtitle My portfolio
   .sticky-header

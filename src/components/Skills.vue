@@ -90,16 +90,3 @@ export default {
   })
 }
 </script>
-
-<style lang="sass" scoped>
-#skills
-  width: 90%
-  margin: auto
-.grid
-  display: grid
-  gap: 2em
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
-
-  img
-    height: 20vh
-</style>

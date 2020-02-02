@@ -1,12 +1,12 @@
 <template lang="pug">
  button.float-button(v-scroll-to="'.wrapper'")
-    i.fas.fa-arrow-up
+   i.fas.fa-arrow-up
 </template>
 
 <style lang="sass">
 .float-button
   z-index: 2
-  background-color: #00d1b2
+  background-color: $main-color
   font-size: 24px
   color: white
   width: 48px

@@ -1,17 +1,19 @@
 <template lang="pug">
 .carousel-navigator
-  button(@click="$emit('prev-page')")
-    i.fas.fa-arrow-left
-  button(@click="$emit('next-page')")
-    i.fas.fa-arrow-right
+  span(@click="$emit('prev-page')")
+    i.fas.fa-caret-left
+  span(@click="$emit('next-page')")
+    i.fas.fa-caret-right
 </template>
 
 <style lang="sass">
 .carousel-navigator
   display: flex
   justify-content: space-between
-  button
-    border-radius: 50%
+  span
+    border-radius: 1em
     font-size: 2em
-    background-color: #f2f2f2
+    width: auto
+    height: auto
+    cursor: pointer
 </style>

@@ -68,7 +68,7 @@ a
   width: 100%
   align-items: center
   justify-content: center
-  background-color: #00d1b2
+  background-color: $main-color
 
 .menu-item
   color: white
@@ -99,3 +99,19 @@ a
 
 .mr-small
   margin-right: 0.3em
+
+.grid
+  display: grid
+  gap: 2em
+  grid-template-columns: repeat(1, 1fr)
+  @include sp-tab
+    grid-template-columns: repeat(1, 1fr)
+  @include tab-pc
+    grid-template-columns: repeat(2, 1fr)
+  @include pc-
+    grid-template-columns: repeat(3, 1fr)
+  max-width: 90vw
+
+  img
+    height: 20vh
+
