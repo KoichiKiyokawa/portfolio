@@ -1,7 +1,7 @@
 <template lang="pug">
 div(data-aos="fade-up" data-aos-delay="500")
   h1.title Works
-  carousel(:per-page="1")
+  carousel(:per-page="1" navigation-enabled)
     slide
       img.work-img(src="https://user-images.githubusercontent.com/40315079/73530134-3f201000-445b-11ea-91db-eff88d704cc4.gif")
       p.subtitle Dormio
