@@ -6,6 +6,7 @@ My portfolio repository
 - [Build Setup](#build-setup)
 ## Feature
 - Made with Nuxt
+- Progressive Web App
 - No CSS Framework
 - Auto test & Auto deploy by Github Actions
 
