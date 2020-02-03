@@ -63,7 +63,7 @@ export default {
         imgSrc:
           'https://qiita-user-contents.imgix.net/https%3A%2F%2Fwww.creationline.com%2Fwp-content%2Fuploads%2F2018%2F06%2FMoby2018.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&s=98741ddc33689c0fba6dc2e4c6838d9e',
         description:
-          'Dockerfile,docker-compose.ymlが書けます。 |とりあえずalpineをベースイメージにしておけば、イメージサイズが小さくできて何かと便利だと思っている。'
+          'Dockerfile,docker-compose.ymlが書けます。|とりあえずalpineをベースイメージにしておけば、イメージサイズが小さくできて何かと便利だと思っている。|ECSやEKSに挑戦したい'
       },
       {
         name: 'Go',
