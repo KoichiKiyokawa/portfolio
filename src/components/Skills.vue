@@ -70,7 +70,7 @@ export default {
         since: '2018/12',
         imgSrc: 'https://cdn-ak.f.st-hatena.com/images/fotolife/t/tikasan0804/20170719/20170719172956.png',
         description:
-          'EchoでかんたんなAPIサーバーを作ったことがあります|まだまだ勉強途中...|Clean Architectureも勉強して、|Go + Clean Architectureでサーバーサイドを書いてみたい'
+          'EchoでかんたんなAPIサーバーを作ったことがあります|まだまだ勉強途中...|Clean Architectureも勉強して、Go + Clean Architectureでサーバーサイドを書いてみたい'
       },
       {
         name: 'Firebase',
