@@ -84,8 +84,18 @@ export default {
         imgAlt: 'Vim',
         description:
           'Vimを普段遣いしています。SSHでサーバーに繋いでいるときに音速でファイル編集ができます|こだわりの設定は<a href="https://github.com/KoichiKiyokawa/dotfiles/blob/master/nvim/init.vim" target="_blank">こちらに<i class="fab fa-github" /></a>'
+      },
+      {
+        name: 'AWS',
+        imgSrc: 'https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png',
+        description: 'EC2, Lambda, Neptuneを扱ったことがあります。Terraformでインフラ as Codeに挑戦したい。'
+      },
+      {
+        name: 'グラフDB',
+        imgSrc: 'https://secure.meetupstatic.com/photos/member/4/6/1/member_278161121.jpeg',
+        description:
+          'Neo4j + CypherクエリでSQLの集計処理を書き換えたことがあります。厳密な計測ではないのですが、そのときは最大で300倍ほど早くなりました。SQLよりも直感的にクエリを書ける印象です。ただ、RDBからデータを移行するのが大変。'
       }
-      // TODO: AWS EC2, Lambda, Neptune
     ]
   })
 }
