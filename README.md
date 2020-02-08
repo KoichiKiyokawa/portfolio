@@ -13,8 +13,8 @@ My portfolio repository
 
 ## Build Setup
 ### Dependencies
-- Node
-- yarn
+- Node 12.x
+- yarn >=1.19.0
 
 ``` bash
 # install dependencies
