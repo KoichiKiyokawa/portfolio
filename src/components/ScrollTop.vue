@@ -1,7 +1,30 @@
 <template lang="pug">
- button.float-button(v-scroll-to="'.wrapper'")
-   i.fas.fa-arrow-up
+button.float-button(v-scroll-to="'.wrapper'" v-show="scrollY > THRESHOLD")
+  i.fas.fa-arrow-up
 </template>
+
+<script>
+// スクロールpxがこの値以上であればボタンを表示する
+const THRESHOLD = 50
+
+export default {
+  data: () => ({
+    scrollY: 0,
+    THRESHOLD
+  }),
+  mounted() {
+    window.addEventListener('scroll', this.setScrollY)
+  },
+  beforeDestroyed() {
+    window.removeEventListener('scroll', this.setScrollY)
+  },
+  methods: {
+    setScrollY() {
+      this.scrollY = window.scrollY
+    }
+  }
+}
+</script>
 
 <style lang="sass">
 .float-button
