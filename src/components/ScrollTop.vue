@@ -1,5 +1,5 @@
 <template lang="pug">
-button.float-button(v-scroll-to="'.wrapper'" v-show="scrollY > THRESHOLD")
+.float-button.clickable(v-scroll-to="'.wrapper'" v-show="scrollY > THRESHOLD")
   i.fas.fa-arrow-up
 </template>
 
@@ -27,16 +27,19 @@ export default {
 </script>
 
 <style lang="sass">
+$side-length: 48px
 .float-button
   z-index: 2
-  background-color: $main-color
-  font-size: 24px
-  color: white
-  width: 48px
-  height: 48px
-  border-radius: 50%
   position: fixed
   bottom: 8px
   right: 8px
-  outline: none
+  background-color: $main-color
+  font-size: $side-length / 2
+  color: white
+  width: $side-length
+  height: $side-length
+  border-radius: 50%
+  cursor: pointer
+  i
+    line-height: $side-length
 </style>

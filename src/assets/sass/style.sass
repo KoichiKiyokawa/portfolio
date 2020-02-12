@@ -48,6 +48,11 @@ a
   @include pc-
     font-size: 4vw
 
+.clickable
+  cursor: pointer
+  &:hover, &:active
+    background-color: darken($main-color, 5%)
+
 .body
   font-weight: 250
   color: #526488
@@ -58,7 +63,6 @@ a
   @include tab-pc
     font-size: 3vw
   @include pc-
-
     font-size: 2vw
 .sticky-header
   position: sticky
@@ -76,16 +80,16 @@ a
   height: $header-height
   line-height: $header-height
   cursor: pointer
-  margin: 0 0.8rem
+  padding: 0 0.8rem
   font-size: 1rem
   @include sp-tab
-    margin: 0 1rem
+    padding: 0 1rem
     font-size: 1.5rem
   @include tab-pc
-    margin: 0 1rem
+    padding: 0 1rem
     font-size: 1.5rem
   @include pc-
-    margin: 0 1.5rem
+    padding: 0 1.5rem
     font-size: 2rem
 
 .shrink
