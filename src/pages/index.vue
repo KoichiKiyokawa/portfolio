@@ -7,7 +7,7 @@
     .clickable.menu-item(v-scroll-to="'#about-me'") About Me
     .clickable.menu-item(v-scroll-to="'#skills'") Skills
     .clickable.menu-item(v-scroll-to="'#works'") Works
-    .clickable.menu-item(href="https://github.com/KoichiKiyokawa" target="_blank")
+    a.clickable.menu-item(href="https://github.com/KoichiKiyokawa" target="_blank")
       i.fab.fa-github.mr-small
       | GitHub
   .mt-large
