@@ -1,7 +1,7 @@
 <template lang="pug">
 .wrapper
   Intersect(@enter="showingMenu = null" :threshold="[0]")
-    img.shrink(src="icon.png" alt="logo")
+    img.logo.shrink(src="icon.png" alt="logo")
   h1.title K.Kiyokawa
   h2.subtitle My portfolio
   .sticky-header
@@ -49,3 +49,8 @@ export default {
   })
 }
 </script>
+
+<style lang="sass">
+.logo
+  max-width: 50vw
+</style>
