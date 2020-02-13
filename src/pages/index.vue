@@ -7,9 +7,10 @@
     .clickable.menu-item(v-scroll-to="'#about-me'" :class="{selected: showingMenu === 'about-me'}") About Me
     .clickable.menu-item(v-scroll-to="'#skills'" :class="{selected: showingMenu === 'skills'}") Skills
     .clickable.menu-item(v-scroll-to="'#works'" :class="{selected: showingMenu === 'works'}") Works
-    a.clickable.menu-item(href="https://github.com/KoichiKiyokawa" target="_blank")
-      i.fab.fa-github.mr-small
-      | GitHub
+    a.clickable.menu-item.icon(href="https://github.com/KoichiKiyokawa" target="_blank")
+      i.fab.fa-github
+    a.clickable.menu-item.icon(href="https://twitter.com/kiyoshiro944" target="_blank")
+      i.fab.fa-twitter
 
   .mt-large
 
