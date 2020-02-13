@@ -33,7 +33,8 @@ export default {
         integrity: 'sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=',
         crossorigin: 'anonymous'
       }
-    ]
+    ],
+    script: [{ src: 'https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver' }]
   },
   /*
    ** Customize the progress-bar color
