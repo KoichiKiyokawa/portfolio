@@ -32,7 +32,7 @@ export default {
         since: '2018/4',
         imgSrc: 'https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png',
         description:
-          'ER図通りにMigrationファイルやModelファイルを書くことができます。|Rspecでテストケースを書いたりも。|テンプレートエンジンはhamlとslimを扱ったとこがあります。|最近はapiサーバーとしてしか使っていないので、helperとか忘れ気味...'
+          'ER図通りにMigrationファイルやModelファイルを書くことができます。Rspecでテストケースを書いたりも。テンプレートエンジンはhamlとslimを扱ったとこがあります。最近はapiサーバーとしてしか使っていないので、helperとか忘れ気味...'
       },
       {
         name: 'GitHub',
@@ -100,3 +100,18 @@ export default {
   })
 }
 </script>
+
+<sytle lang="sass">
+.each-skill
+  border: solid 1px rgba(0,0,0,.4)
+  border-radius: 10px
+  box-shadow: 0 0 2px
+  padding: 10px
+  .skill-image
+    position: relative
+    .skill-name
+      background-color: $main-color
+      width: min-content
+      position: absolute
+      top: 0
+</sytle>
