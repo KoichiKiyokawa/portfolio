@@ -1,5 +1,5 @@
 <template lang="pug">
-div#skills(data-aos="fade-up" data-aos-delay="500")
+div#skills(data-aos="fade-up")
   h1.title Skills
   h2.subtitle 言語, フレームワーク, etc... 
     br

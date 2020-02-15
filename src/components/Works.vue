@@ -1,5 +1,5 @@
 <template lang="pug">
-div(data-aos="fade-up" data-aos-delay="500")
+div(data-aos="fade-up")
   h1.title Works
   carousel(:per-page="1" :navigate-to="page")
     slide
