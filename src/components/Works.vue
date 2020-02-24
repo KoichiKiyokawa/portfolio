@@ -22,13 +22,24 @@ div(data-aos="fade-up")
         p 詳しくは
           a(href="https://github.com/KoichiKiyokawa/money_manager" target="_blank") こちら
             i.fab.fa-github
+    slide
+      img.work-img(src="visually-digger.gif")
+      carousel-navigator(@prev-page="turnPrevPage" @next-page="turnNextPage")
+      p.subtitle visually-digger
+      .body
+        p JavaScript用ライブラリ
+        p 配列が混ざった複雑なオブジェクトから値を取り出すのを視覚的にわかりやすくする
+        p npmで公開
+        p 詳しくは
+          a(href="https://github.com/KoichiKiyokawa/visually-digger" target="_blank") こちら
+            i.fab.fa-github
 </template>
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'
 import CarouselNavigator from '~/components/CarouselNavigator'
 
-const CAROUSEL_MAX_PAGE = 1 // page: 0, 1
+const CAROUSEL_MAX_PAGE = 2 // page: 0, 1
 
 export default {
   components: { Carousel, Slide, CarouselNavigator },
