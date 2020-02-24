@@ -10,9 +10,7 @@ div(data-aos="fade-up")
         p 寮で暮らす人と管理人をつなぐアプリ
         p React Nativeでクロスプラットフォーム開発
         p 詳しくは
-          |
-          a(href="https://github.com/KoichiKiyokawa/dormio" target="_blank") 
-            | こちら
+          a(href="https://github.com/KoichiKiyokawa/dormio" target="_blank") こちら
             i.fab.fa-github
     slide
       img.work-img(src="https://user-images.githubusercontent.com/40315079/73604795-dca14e00-45d9-11ea-8240-efaa58e6ba2e.gif")
@@ -22,9 +20,7 @@ div(data-aos="fade-up")
         p Java製のGUI家計簿アプリ
         p マルチプラットフォームに対応
         p 詳しくは
-          |
-          a(href="https://github.com/KoichiKiyokawa/money_manager" target="_blank") 
-            | こちら
+          a(href="https://github.com/KoichiKiyokawa/money_manager" target="_blank") こちら
             i.fab.fa-github
 </template>
 
