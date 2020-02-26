@@ -51,26 +51,26 @@ export default {
         name: 'React',
         imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png',
         description:
-          'Hooksを使った書き方のほうが経験が長いです|TypeScript, Next, Redux, StyledComponent, React Nativeも体験しました'
+          'Hooksを使った書き方のほうが経験が長いです。|TypeScript, Next, Redux, StyledComponent, React Nativeも体験しました。'
       },
       {
         name: 'Java',
         imgSrc: 'https://josys-navi.hiblead.co.jp/wp-content/uploads/2019/03/Logo_Java.jpg',
-        description: '大学の卒業研究でJavaを書いていました|他にもJavaFXでデスクトップアプリを作ったり'
+        description: '大学の卒業研究でJavaを書いていました。|他にもJavaFXでデスクトップアプリを作ったり。'
       },
       {
         name: 'Docker',
         imgSrc:
           'https://qiita-user-contents.imgix.net/https%3A%2F%2Fwww.creationline.com%2Fwp-content%2Fuploads%2F2018%2F06%2FMoby2018.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&s=98741ddc33689c0fba6dc2e4c6838d9e',
         description:
-          'Dockerfile,docker-compose.ymlが書けます。|とりあえずalpineをベースイメージにしておけば、イメージサイズが小さくできて何かと便利だと思っている。|ECSやEKSに挑戦したい'
+          'Dockerfile,docker-compose.ymlが書けます。|とりあえずalpineをベースイメージにしておけば、イメージサイズが小さくできて何かと便利だと思っています。|ECSやEKSを使ってみたい。'
       },
       {
         name: 'Go',
         since: '2018/12',
         imgSrc: 'https://cdn-ak.f.st-hatena.com/images/fotolife/t/tikasan0804/20170719/20170719172956.png',
         description:
-          'EchoでかんたんなAPIサーバーを作ったことがあります|まだまだ勉強途中...|Clean Architectureも勉強して、Go + Clean Architectureでサーバーサイドを書いてみたい'
+          'EchoでかんたんなAPIサーバーを作ったことがあります。|まだまだ勉強途中...。|Clean Architectureも勉強して、Go + Clean Architectureでサーバーサイドを書いてみたい。'
       },
       {
         name: 'Firebase',
@@ -83,7 +83,7 @@ export default {
         imgSrc: 'https://cdn.dribbble.com/users/2008/screenshots/1442436/mark-dribbble.png',
         imgAlt: 'Vim',
         description:
-          '(技術なのか...?)Vimを普段遣いしています。SSHでサーバーに繋いでいるときに音速でファイル編集ができます|こだわりの設定は<a href="https://github.com/KoichiKiyokawa/dotfiles/blob/master/nvim/init.vim" target="_blank">こちらに<i class="fab fa-github" /></a>'
+          '(技術なのか...?)Vimを普段遣いしています。SSHでサーバーに繋いでいるときに音速でファイル編集ができます。|こだわりの設定は<a href="https://github.com/KoichiKiyokawa/dotfiles/blob/master/nvim/init.vim" target="_blank">こちらに<i class="fab fa-github" /></a>'
       },
       {
         name: 'AWS',
@@ -109,4 +109,6 @@ export default {
   padding: 10px
   .skill-name
     box-shadow: 0 0 2px 0
+    margin-top: 10px
+    margin-bottom: 1rem
 </sytle>
