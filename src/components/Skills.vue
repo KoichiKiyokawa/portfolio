@@ -7,7 +7,7 @@ div#skills(data-aos="fade-up")
   .body.grid
     .each-skill(v-for="(skill, i) in skills" :key="i")
       img(:src="skill.imgSrc" :alt="skill.imgAlt || skill.name")
-      p {{skill.name}}{{skill.since ? `: ${skill.since}~` : ''}}
+      p.skill-name {{skill.name}}{{skill.since ? `: ${skill.since}~` : ''}}
       p.text-left(v-for="(desc, i) in skill.description.split('|')" :key="i" v-html="desc")
 </template>
 
@@ -79,11 +79,11 @@ export default {
         description: 'Authentification, FireStoreが使えます。ML Kitとかも使ってみたい。'
       },
       {
-        name: 'Vim(技術なのか...?)',
+        name: 'Vim',
         imgSrc: 'https://cdn.dribbble.com/users/2008/screenshots/1442436/mark-dribbble.png',
         imgAlt: 'Vim',
         description:
-          'Vimを普段遣いしています。SSHでサーバーに繋いでいるときに音速でファイル編集ができます|こだわりの設定は<a href="https://github.com/KoichiKiyokawa/dotfiles/blob/master/nvim/init.vim" target="_blank">こちらに<i class="fab fa-github" /></a>'
+          '(技術なのか...?)Vimを普段遣いしています。SSHでサーバーに繋いでいるときに音速でファイル編集ができます|こだわりの設定は<a href="https://github.com/KoichiKiyokawa/dotfiles/blob/master/nvim/init.vim" target="_blank">こちらに<i class="fab fa-github" /></a>'
       },
       {
         name: 'AWS',
@@ -105,13 +105,8 @@ export default {
 .each-skill
   border: solid 1px rgba(0,0,0,.4)
   border-radius: 10px
-  box-shadow: 0 0 2px
+  box-shadow: inset 0 0 2px
   padding: 10px
-  .skill-image
-    position: relative
-    .skill-name
-      background-color: $main-color
-      width: min-content
-      position: absolute
-      top: 0
+  .skill-name
+    box-shadow: 0 0 2px 0
 </sytle>
