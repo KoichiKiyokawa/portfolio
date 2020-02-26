@@ -1,7 +1,7 @@
 <template lang="pug">
 div(data-aos="fade-up")
   h1.title Works
-  carousel(:per-page="1" :navigate-to="page")
+  carousel(:per-page="1" :navigate-to="page" pagination-color="#00d1b2")
     slide
       video.work-img(src="dormio_summary.mp4" autoplay controls loop)
       carousel-navigator(@prev-page="turnPrevPage" @next-page="turnNextPage")
