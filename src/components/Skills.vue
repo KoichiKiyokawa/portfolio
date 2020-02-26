@@ -8,7 +8,7 @@ div#skills(data-aos="fade-up")
     .each-skill(v-for="(skill, i) in skills" :key="i")
       img(:src="skill.imgSrc" :alt="skill.imgAlt || skill.name")
       p {{skill.name}}{{skill.since ? `: ${skill.since}~` : ''}}
-      p(v-for="(desc, i) in skill.description.split('|')" :key="i" v-html="desc")
+      p.text-left(v-for="(desc, i) in skill.description.split('|')" :key="i" v-html="desc")
 </template>
 
 <script>
@@ -45,7 +45,7 @@ export default {
         since: '2018/11',
         imgSrc: 'https://jp.vuejs.org/images/logo.png',
         description:
-          'Vuex, Vue routerも。色々よしなにやってくれるNuxtが好き。このサイトもNuxtで作っています(適当に設定していたらPWAに対応してた...)。|TypeScript + クラススタイルの書き方が好きですが、VuexとTypeScriptの組み合わせはまだ勉強中...'
+          'Vuex, Vue routerも。色々よしなにやってくれるNuxtが好き。このサイトもNuxtで作っています。|TypeScript + クラススタイルの書き方が好きですが、VuexとTypeScriptの組み合わせはまだ勉強中...'
       },
       {
         name: 'React',
