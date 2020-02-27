@@ -14,8 +14,8 @@
       i.fab.fa-twitter
 
   ScrollPrompt
-
   .space
+
   AboutMe#about-me.shrink.intersect
 
   .bg-image1
@@ -66,7 +66,7 @@ export default {
 
 <style lang="sass">
 .space
-  height: 6rem
+  height: 9rem
 .bg-image1, .bg-image2
   margin: 5rem 0
   background-attachment: fixed
