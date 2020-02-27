@@ -28,7 +28,7 @@ div(data-aos="fade-up")
       p.subtitle visually-digger
       .body
         p JavaScript用ライブラリ
-        p 配列が混ざった複雑なオブジェクトから値を取り出すのを視覚的にわかりやすくする
+        p 配列が混ざった複雑なオブジェクトから値を直感的に取り出せるようにする
         p npmで公開
         p 詳しくは
           a(href="https://github.com/KoichiKiyokawa/visually-digger" target="_blank") こちら
