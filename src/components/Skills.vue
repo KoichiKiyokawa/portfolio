@@ -2,12 +2,10 @@
 div#skills(data-aos="fade-up")
   h1.title Skills
   h2.subtitle 言語, フレームワーク, etc... 
-    br
-    | (経歴が長い順に並んでいます)
   .body.grid
     .each-skill(v-for="(skill, i) in skills" :key="i")
       img(:src="skill.imgSrc" :alt="skill.imgAlt || skill.name")
-      p.skill-name {{skill.name}}{{skill.since ? `: ${skill.since}~` : ''}}
+      p.skill-name {{skill.name}}
       .description
         p(v-for="(desc, i) in skill.description.split('|')" :key="i" v-html="desc")
 </template>
@@ -18,7 +16,6 @@ export default {
     /**
      * @type skill {
      *   name: string
-     *   since?: string
      *   imgSrc: string
      *   imgAlt?: string
      *   description: string
@@ -30,7 +27,6 @@ export default {
     skills: [
       {
         name: 'Rails',
-        since: '2018/4',
         imgSrc: 'https://y-hilite.com/wp-content/uploads/2018/02/rails_logo.png',
         description:
           'ER図通りにMigrationファイルやModelファイルを書くことができます。Rspecでテストケースを書いたりも。テンプレートエンジンはhamlとslimを扱ったとこがあります。最近はapiサーバーとしてしか使っていないので、helperとか忘れ気味...'
@@ -43,7 +39,6 @@ export default {
       },
       {
         name: 'Vue',
-        since: '2018/11',
         imgSrc: 'https://jp.vuejs.org/images/logo.png',
         description:
           'Vuex, Vue routerも。色々よしなにやってくれるNuxtが好き。このサイトもNuxtで作っています。|TypeScript + クラススタイルの書き方が好きですが、VuexとTypeScriptの組み合わせはまだ勉強中...'
@@ -68,7 +63,6 @@ export default {
       },
       {
         name: 'Go',
-        since: '2018/12',
         imgSrc: 'https://cdn-ak.f.st-hatena.com/images/fotolife/t/tikasan0804/20170719/20170719172956.png',
         description:
           'EchoでかんたんなAPIサーバーを作ったことがあります。|まだまだ勉強途中...。|Clean Architectureも勉強して、Go + Clean Architectureでサーバーサイドを書いてみたい。'
