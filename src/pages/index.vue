@@ -3,6 +3,7 @@
   img.logo.shrink(src="icon.png" alt="logo").intersect
   h1.title K.Kiyokawa
   h2.subtitle My portfolio
+
   .sticky-header
     .clickable.menu-item(v-scroll-to="'#about-me'" :class="{selected: showingMenu === 'about-me'}") About Me
     .clickable.menu-item(v-scroll-to="'#skills'" :class="{selected: showingMenu === 'skills'}") Skills
@@ -11,6 +12,8 @@
       i.fab.fa-github
     a.clickable.menu-item.icon(href="https://twitter.com/kiyoshiro944" target="_blank")
       i.fab.fa-twitter
+
+  ScrollPrompt
 
   .space
   AboutMe#about-me.shrink.intersect
@@ -27,6 +30,7 @@
 </template>
 
 <script>
+import ScrollPrompt from '~/components/ScrollPrompt'
 import ScrollTop from '~/components/ScrollTop'
 import AboutMe from '~/components/AboutMe'
 import Skills from '~/components/Skills'
@@ -34,6 +38,7 @@ import Works from '~/components/Works'
 
 export default {
   components: {
+    ScrollPrompt,
     ScrollTop,
     AboutMe,
     Skills,
@@ -61,7 +66,7 @@ export default {
 
 <style lang="sass">
 .space
-  height: 3rem
+  height: 6rem
 .bg-image1, .bg-image2
   margin: 5rem 0
   background-attachment: fixed
