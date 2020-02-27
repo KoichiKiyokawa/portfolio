@@ -12,15 +12,14 @@
     a.clickable.menu-item.icon(href="https://twitter.com/kiyoshiro944" target="_blank")
       i.fab.fa-twitter
 
-  .mt-large
-
+  .space
   AboutMe#about-me.shrink.intersect
 
-  .mt-middle
+  .bg-image1
 
   Skills#skills.shrink.intersect
 
-  .mt-middle
+  .bg-image2
 
   Works#works.shrink.intersect
   ScrollTop
@@ -60,6 +59,18 @@ export default {
 </script>
 
 <style lang="sass">
+.space
+  height: 3rem
+.bg-image1, .bg-image2
+  margin: 5rem 0
+  background-attachment: fixed
+  background-size: cover
+  background-position: center
+  min-height: 50vh
+  &.bg-image1
+    background-image: url('/campas.jpg')
+  &.bg-image2
+    background-image: url('https://user-images.githubusercontent.com/40315079/73604430-e7f17b00-45d3-11ea-9441-a1461f561844.png')
 .logo
   max-width: 50vw
 </style>
