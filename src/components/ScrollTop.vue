@@ -1,6 +1,7 @@
 <template lang="pug">
-.float-button.clickable(v-scroll-to="'.wrapper'" v-show="scrollY > THRESHOLD")
-  i.fas.fa-arrow-up
+transition(name="fade")
+  .float-button.clickable(v-scroll-to="'.wrapper'" v-show="scrollY > THRESHOLD")
+    i.fas.fa-arrow-up
 </template>
 
 <script>
@@ -42,4 +43,10 @@ $side-length: 48px
   cursor: pointer
   i
     line-height: $side-length
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity .5s
+
+.fade-enter, .fade-leave-to
+  opacity: 0
 </style>
