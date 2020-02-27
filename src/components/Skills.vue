@@ -8,7 +8,8 @@ div#skills(data-aos="fade-up")
     .each-skill(v-for="(skill, i) in skills" :key="i")
       img(:src="skill.imgSrc" :alt="skill.imgAlt || skill.name")
       p.skill-name {{skill.name}}{{skill.since ? `: ${skill.since}~` : ''}}
-      p.text-left(v-for="(desc, i) in skill.description.split('|')" :key="i" v-html="desc")
+      .description
+        p(v-for="(desc, i) in skill.description.split('|')" :key="i" v-html="desc")
 </template>
 
 <script>
@@ -111,4 +112,8 @@ export default {
     box-shadow: 0 0 2px 0
     margin-top: 10px
     margin-bottom: 1rem
+    font-weight: bold
+  .description
+    text-align: left
+    font-size: 1rem
 </sytle>
