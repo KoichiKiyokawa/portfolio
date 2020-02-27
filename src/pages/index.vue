@@ -74,7 +74,7 @@ export default {
   background-position: center
   min-height: 50vh
   &.bg-image1
-    background-image: url('/campas.jpg')
+    background-image: url('~assets/campas.jpg')
   &.bg-image2
     background-image: url('https://user-images.githubusercontent.com/40315079/73604430-e7f17b00-45d3-11ea-9441-a1461f561844.png')
 .logo
