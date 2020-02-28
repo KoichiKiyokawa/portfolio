@@ -1,12 +1,12 @@
 <template lang="pug">
 div(data-aos="fade-up")
   h1.title Works
-  carousel(:per-page="1" :navigate-to="page" pagination-color="#00d1b2")
+  carousel(:per-page="1" :navigate-to="page" pagination-color="#00d1b2" pagination-position="bottom-overlay")
     slide
       video.work-img(src="dormio_summary.mp4" autoplay controls loop)
       carousel-navigator(@prev-page="turnPrevPage" @next-page="turnNextPage")
       p.subtitle Dormio
-      .body
+      .description
         p 寮で暮らす人と管理人をつなぐアプリ
         p React Nativeでクロスプラットフォーム開発
         p 詳しくは
@@ -16,7 +16,7 @@ div(data-aos="fade-up")
       img.work-img(src="https://user-images.githubusercontent.com/40315079/73604795-dca14e00-45d9-11ea-8240-efaa58e6ba2e.gif")
       carousel-navigator(@prev-page="turnPrevPage" @next-page="turnNextPage")
       p.subtitle Money Manager
-      .body
+      .description
         p Java製のGUI家計簿アプリ
         p マルチプラットフォームに対応
         p 詳しくは
@@ -26,7 +26,7 @@ div(data-aos="fade-up")
       img.work-img(src="visually-digger.gif")
       carousel-navigator(@prev-page="turnPrevPage" @next-page="turnNextPage")
       p.subtitle visually-digger
-      .body
+      .description
         p JavaScript用ライブラリ
         p 配列が混ざった複雑なオブジェクトから値を直感的に取り出せるようにする
         p npmで公開
@@ -64,6 +64,11 @@ export default {
 </script>
 <style lang="sass">
 .work-img
-  height: 20em
+  height: 20rem
   max-width: 90vw
+.description
+  color: #526488
+// 文字とかぶらないようにずらす
+.VueCarousel-pagination
+  transform: translateY(1rem)
 </style>
