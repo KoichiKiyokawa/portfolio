@@ -1,7 +1,7 @@
 <template lang="pug">
 div(data-aos="fade-up")
   h1.title Works
-  carousel(:per-page="1" :navigate-to="page" pagination-color="#00d1b2" pagination-position="bottom-overlay")
+  carousel(:per-page="1" :navigate-to="page" pagination-color="#00d1b2")
     slide
       video.work-img(src="dormio_summary.mp4" autoplay controls loop)
       carousel-navigator(@prev-page="turnPrevPage" @next-page="turnNextPage")
@@ -68,7 +68,7 @@ export default {
   max-width: 90vw
 .description
   color: #526488
-// 文字とかぶらないようにずらす
-.VueCarousel-pagination
-  transform: translateY(1rem)
+// カルーセルのドットと説明文の間を少なくする
+.VueCarousel-dot-container, .VueCarousel-dot
+  margin-top: 0 !important
 </style>
