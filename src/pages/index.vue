@@ -1,8 +1,12 @@
 <template lang="pug">
 .wrapper
-  img.logo.shrink(src="icon.png" alt="logo").intersect
-  h1.title K.Kiyokawa
-  h2.subtitle My portfolio
+  .bg-image-container
+    .bg-image(:class="scrollRate < 50 ? 'image1' : 'image2'")
+
+  .top
+    img.logo.shrink(src="icon.png" alt="logo").intersect
+    h1.title K.Kiyokawa
+    h2.subtitle My portfolio
 
   .sticky-header
     .clickable.menu-item(v-scroll-to="'#about-me'" :class="{selected: showingMenu === 'about-me'}") About Me
@@ -13,18 +17,19 @@
     a.clickable.menu-item.icon(href="https://twitter.com/kiyoshiro944" target="_blank")
       i.fab.fa-twitter
 
-  ScrollPrompt
-  .space
+  .white-bg
+    ScrollPrompt
+    AboutMe#about-me.shrink.intersect
 
-  AboutMe#about-me.shrink.intersect
+  .parallax
 
-  .bg-image1
+  .white-bg
+    Skills#skills.shrink.intersect
 
-  Skills#skills.shrink.intersect
+  .parallax
 
-  .bg-image2
-
-  Works#works.shrink.intersect
+  .white-bg
+    Works#works.shrink.intersect
 
   ScrollTop
 </template>
@@ -45,12 +50,19 @@ export default {
     Works
   },
   data: () => ({
-    showingMenu: ''
+    showingMenu: '',
+    scrollRate: 0
   }),
   mounted() {
+    // set up intersection observe api
     document
       .querySelectorAll('.intersect')
       .forEach(elem => new IntersectionObserver(this.onIntersect, { threshold: [0.1] }).observe(elem))
+
+    // calc window scroll rate
+    window.onscroll = () => {
+      this.scrollRate = (100 * window.pageYOffset) / document.body.clientHeight
+    }
   },
   beforeDestroyed() {
     document.querySelectorAll('.intersect').forEach(elem => new IntersectionObserver().unobserve(elem))
@@ -65,18 +77,32 @@ export default {
 </script>
 
 <style lang="sass">
-.space
-  height: 9rem
-.bg-image1, .bg-image2
-  margin: 5rem 0
-  background-attachment: fixed
-  background-size: cover
-  background-position: center
-  min-height: 50vh
-  &.bg-image1
-    background-image: url('~assets/campas.jpg')
-  &.bg-image2
-    background-image: url('https://user-images.githubusercontent.com/40315079/73604430-e7f17b00-45d3-11ea-9441-a1461f561844.png')
+.top
+  padding-top: 5rem
+  background-color: rgba(white, .7)
+.white-bg
+  background-color: white
+.bg-image-container
+  position: relative
+  .bg-image
+    position: fixed
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
+    z-index: -1
+    background-size: auto 100%
+    background-repeat: no-repeat
+    background-position: center
+    &.image1
+      background-image: url('~assets/campas.jpg')
+    &.image2
+      background-image: url('https://user-images.githubusercontent.com/40315079/73604430-e7f17b00-45d3-11ea-9441-a1461f561844.png')
+
+#about-me, #skills, #works
+  padding: 9rem 0
+.parallax
+  height: 320px
 .logo
   max-width: 50vw
 </style>
