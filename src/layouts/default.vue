@@ -1,19 +1,20 @@
 <template lang="pug">
 div
-  .loading(:class="isLoadComplete && 'load-complete'")
+  transition
+    .loading(v-if="isLoading")
   nuxt
 </template>
 
 <script>
 export default {
-  data: () => ({ isLoadComplete: false }),
+  data: () => ({ isLoading: true }),
   mounted() {
     if (window.performance.navigation.type === 1) {
       // 再読込されたら、ローディングをすぐに解除
-      this.isLoadComplete = true
+      this.isLoading = false
     } else {
       setTimeout(() => {
-        this.isLoadComplete = true
+        this.isLoading = false
       }, 3000)
     }
   }
@@ -27,14 +28,8 @@ export default {
   height: 100vh
   z-index: 10
   background: url('~assets/Wedges-3s-200px.gif') no-repeat center white
-.load-complete
-  animation: fadeout 2s linear 0s forwards
-
-@keyframes fadeout
-  0%
-    opacity: 1
-  80%
-    opacity: .5
-  100%
-    opacity: 0
+.v-leave-active
+  transition: 2s ease-out
+.v-leave-to
+  opacity: 0
 </style>
