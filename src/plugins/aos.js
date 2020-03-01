@@ -5,7 +5,8 @@ import 'aos/dist/aos.css'
 /* eslint new-cap: 0 */
 export default ({ app }) => {
   app.AOS = new AOS.init({
-    duration: 1000
+    duration: 1000,
+    delay: 500
   })
 }
 

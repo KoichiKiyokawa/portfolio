@@ -55,9 +55,7 @@ export default {
   }),
   mounted() {
     // set up intersection observe api
-    document
-      .querySelectorAll('.intersect')
-      .forEach(elem => new IntersectionObserver(this.onIntersect, { threshold: [0.1] }).observe(elem))
+    document.querySelectorAll('.intersect').forEach(elem => new IntersectionObserver(this.onIntersect).observe(elem))
 
     // calc window scroll rate
     window.onscroll = () => {
