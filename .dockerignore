@@ -1,0 +1,9 @@
+.editorconfig
+Dockerfile
+README.md
+yarn-error.log
+.gitignore
+node_modules/
+.git/
+.github/
+.nuxt/

@@ -13,20 +13,10 @@ My portfolio repository
 
 ## Build Setup
 ### Dependencies
-- Node 12.x
-- yarn >=1.19.0
+- Docker
+- Docker Compose
 
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+``` shell
+docker-compose up --build
+# => open http://localhost:3000
 ```
