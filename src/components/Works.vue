@@ -23,15 +23,15 @@ div(data-aos="fade-up")
           a(href="https://github.com/KoichiKiyokawa/money_manager" target="_blank") こちら
             i.fab.fa-github
     slide
-      img.work-img(src="visually-digger.gif")
+      img.work-img(src="smart-mole.gif")
       carousel-navigator(@prev-page="turnPrevPage" @next-page="turnNextPage")
-      p.subtitle visually-digger
+      p.subtitle smart-mole
       .description
         p JavaScript用ライブラリ
         p 配列が混ざった複雑なオブジェクトから値を直感的に取り出せるようにする
         p npmで公開
         p 詳しくは
-          a(href="https://github.com/KoichiKiyokawa/visually-digger" target="_blank") こちら
+          a(href="https://github.com/KoichiKiyokawa/smart-mole" target="_blank") こちら
             i.fab.fa-github
 </template>
 
