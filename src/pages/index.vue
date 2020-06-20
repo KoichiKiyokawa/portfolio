@@ -34,44 +34,36 @@
   ScrollTop
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent, ref, onMounted } from 'nuxt-composition-api'
 import ScrollPrompt from '~/components/ScrollPrompt'
 import ScrollTop from '~/components/ScrollTop'
 import AboutMe from '~/components/AboutMe'
 import Skills from '~/components/Skills'
 import Works from '~/components/Works'
 
-export default {
-  components: {
-    ScrollPrompt,
-    ScrollTop,
-    AboutMe,
-    Skills,
-    Works
-  },
-  data: () => ({
-    showingMenu: '',
-    scrollRate: 0
-  }),
-  mounted() {
-    // set up intersection observe api
-    document.querySelectorAll('.intersect').forEach(elem => new IntersectionObserver(this.onIntersect).observe(elem))
+export default defineComponent({
+  components: { ScrollPrompt, ScrollTop, AboutMe, Skills, Works },
+  setup() {
+    const showingMenu = ref('')
+    const scrollRate = ref(0)
 
-    // calc window scroll rate
-    window.onscroll = () => {
-      this.scrollRate = (100 * window.pageYOffset) / document.body.clientHeight
-    }
-  },
-  beforeDestroyed() {
-    document.querySelectorAll('.intersect').forEach(elem => new IntersectionObserver().unobserve(elem))
-  },
-  methods: {
-    onIntersect(entries) {
+    const onIntersect: IntersectionObserverCallback = entries => {
       const showedElem = entries[0]
-      if (showedElem.isIntersecting) this.showingMenu = showedElem.target.id
+      if (showedElem.isIntersecting) showingMenu.value = showedElem.target.id
     }
+    onMounted(() => {
+      // set up intersection observe api
+      document.querySelectorAll('.intersect').forEach(elem => new IntersectionObserver(onIntersect).observe(elem))
+
+      // calc window scroll rate
+      window.onscroll = () => {
+        scrollRate.value = (100 * window.pageYOffset) / document.body.clientHeight
+      }
+    })
+    return {showingMenu, scrollRate}
   }
-}
+})
 </script>
 
 <style lang="sass">
