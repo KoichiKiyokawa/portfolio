@@ -47,7 +47,7 @@ export default {
         name: 'React',
         imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png',
         description:
-          'Hooksを使った書き方のほうが経験が長いです。|TypeScript, Next, Redux, StyledComponent, React Nativeも体験しました。'
+          'Hooksを使った書き方のほうが経験が長いですが、クラスでも書けます。|TypeScript, Next, Redux, StyledComponent, React Nativeも。|useCallback, useMemo, React.memoでレンダリングを抑制したり、カスタムフックを作ったりもできます。'
       },
       {
         name: 'Java',
