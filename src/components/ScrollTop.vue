@@ -11,7 +11,7 @@ const THRESHOLD = 50
 export default {
   data: () => ({
     scrollY: 0,
-    THRESHOLD
+    THRESHOLD,
   }),
   mounted() {
     window.addEventListener('scroll', this.setScrollY)
@@ -22,8 +22,8 @@ export default {
   methods: {
     setScrollY() {
       this.scrollY = window.scrollY
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -35,7 +35,7 @@ $side-length: 48px
   bottom: 8px
   right: 8px
   background-color: $main-color
-  font-size: $side-length / 2
+  font-size: calc($side-length / 2)
   color: white
   width: $side-length
   height: $side-length
